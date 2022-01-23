@@ -13,7 +13,7 @@ This library exposes two C API functions:
   - See `data-interop.hpp` for the exact format of `ppuState`.
 
 You should hopefully be able to call `make` to build a dynamic object containing the library.
-This library has only been tested on Windows 
+This library has only been tested on Windows MinGW-w64.
 
 License
 -------
