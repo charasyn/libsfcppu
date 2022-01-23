@@ -1,0 +1,4 @@
+{
+   global: libsfcppu_*;
+   local: *;
+};
