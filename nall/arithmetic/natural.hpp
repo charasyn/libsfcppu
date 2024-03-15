@@ -4,7 +4,7 @@
 #define Pair DeclareType(PairBits)
 #define Type DeclareType(TypeBits)
 #define Half DeclareType(HalfBits)
-
+#include <stdexcept>
 //pick the larger of two types to prevent unnecessary data clamping
 #define Cast (typename conditional<sizeof(Pair) >= sizeof(T), Pair, T>::type)
 
