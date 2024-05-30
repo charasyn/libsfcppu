@@ -14,9 +14,13 @@ else ifeq ($(platform), tvos-arm64)
 	options += -dynamiclib
 endif
 
+dirs := obj out
+$(dirs):
+	mkdir $@
+
 objects := obj/$(name).o
 
-obj/$(name).o: $(name).cpp
+obj/$(name).o: $(name).cpp | $(dirs)
 obj/test.o: test.cpp
 	$(call compile,$(shell pkg-config --cflags SDL2))
 
